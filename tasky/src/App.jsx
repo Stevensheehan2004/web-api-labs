@@ -62,7 +62,7 @@ function App() {
 
   const formSubmitHandler = async (event) => {
     event.preventDefault();
-    const tasks = taskState.tasks?[...taskState.tasks]:[];
+    const tasks = taskState.tasks ? [...taskState.tasks] : [];
     const form = {...formState};
     const newTask = await addTask(form);
     tasks.push(newTask);
